@@ -8,7 +8,7 @@ STATE = (
 # Create your models here.
 class Extorsion(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
-    phone = models.IntegerField()
+    phone = models.BigIntegerField()
     description = models.TextField()
     state = models.CharField(choices=STATE, max_length=50)
     date = models.DateField(auto_now_add=True)
